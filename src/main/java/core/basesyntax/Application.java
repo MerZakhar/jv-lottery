@@ -3,17 +3,8 @@ package core.basesyntax;
 public class Application {
     public static void main(String[] args) {
         Lottery lottery = new Lottery();
-
-        Ball b1 = lottery.getRandomBall();
-
-        Ball b2 = lottery.getRandomBall();
-
-        Ball b3 = lottery.getRandomBall();
-
-        System.out.println(b1.toString());
-
-        System.out.println(b2.toString());
-
-        System.out.println(b3.toString());
+        for (int i = 0; i <= 2; i++) {
+            System.out.println(lottery.getRandomBall());
+        }
     }
 }
